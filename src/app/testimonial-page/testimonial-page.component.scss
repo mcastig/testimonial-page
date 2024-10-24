@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
 .testimonial-page-container {
   margin-top: 260px;
+  max-width: 92%;
+  font-family: "Sora", sans-serif;
+  padding: 0;
+
+  ul li::marker {
+    font-size: 2px;
+  }
+
+  .left-side {
+
+    .star-wrapper {
+      background-color: #F5C044;
+      border-radius: 50%;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .review-title {
+      color: #18181B;
+      font-size: 36px;
+      font-weight: bold;
+      padding-top: 24px;
+    }
+
+    .review-description {
+      color: #52525A;
+      font-size: 20px;
+      padding-bottom: 14px;
+    }
+
+    .review-ckecklist {
+      color: #52525A;
+      font-size: 14px;
+      list-style: none;
+      list-style-image: url("/assets/images/done-ring-round-fill.svg");
+      margin-left: 34px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-page-container {
+    margin-top: 60px;
+  }
 }
