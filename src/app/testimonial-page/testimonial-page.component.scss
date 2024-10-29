@@ -6,8 +6,25 @@
   font-family: "Sora", sans-serif;
   padding: 0;
 
+  ul {
+    line-height: 2.6;
+  }
+
   ul li::marker {
     font-size: 2px;
+  }
+
+  i.checkmark {
+    background: url("/assets/images/done-ring-round-fill.svg");
+    display: block;
+    height: 22px;
+    position: absolute;
+    margin-top: 6px;
+    width: 22px;
+  }
+
+  .padding-list {
+    padding-left: 2rem;
   }
 
   .left-side {
@@ -29,14 +46,13 @@
     .review-description {
       color: #52525A;
       font-size: 20px;
-      padding-bottom: 14px;
+      line-height: 1.8;
     }
 
     .review-ckecklist {
       color: #52525A;
       font-size: 14px;
       list-style: none;
-      list-style-image: url("/assets/images/done-ring-round-fill.svg");
       margin-left: 34px;
     }
   }
@@ -45,5 +61,11 @@
 @media (max-width: 768px) {
   .testimonial-page-container {
     margin-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-description {
+    padding: 14px 310px 14px 0;
   }
 }
